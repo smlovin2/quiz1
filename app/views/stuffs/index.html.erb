@@ -1,1 +1,10 @@
-<h1>I hope I did this quiz right!</h1>
+<% @stuff.each do |stuff| %>
+  <div>
+    <h2>What is your name?</h2><br />
+    <p><%= stuff.name %></p><br />
+    <h2>What is your quest?</h2><br />
+    <p><%= stuff.quest %></p><br />
+    <h2>What is your favorite color?</h2><br />
+    <p><%= stuff.favorite_color %></p><br />
+  </div>
+<% end %>
