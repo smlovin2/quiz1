@@ -1,0 +1,11 @@
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+  <h1>Answer Me These Questions Three</h1>
+  <br />
+  <%= simple_form_for @stuff do |f| %>
+    <%= f.input :name, label: 'What is your name?' %>
+    <%= f.input :quest, label: 'What is your quest?' %>
+    <%= f.input :favorite_color, label: 'What is your favorite color?' %>
+    <br />
+    <%= f.submit 'Answer', :class => 'btn btn-primary' %>
+  <% end %>
+</div>

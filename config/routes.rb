@@ -4,6 +4,8 @@ Quiz1::Application.routes.draw do
 
   root 'stuffs#index'
 
+  resources :stuffs
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
